@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Javascript</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Practica de Javascript</h1>
+    <h2>Ejercicio de Ciudades</h2>
+    <p>Cuando el usuario use los botones de las ciudades, la página haga lo siguiente:</p>
+    <ul>
+        <li>Se muestra la info correspondiente a cada ciudad, una sola . Titular, descripción e imagen</li>
+        <li>Si el usuario hace clic en la imagen de la ciudad que se muestre, se vea en Blanco y negro</li>
+        <li>Si el usuario aprieta los botones más de 5 veces, desaparece el contenido y aparece el mensaje "Has apretado más de 5 veces los botones".</li>
+        
+    </ul>
+    <main id="main">  
+        <h3>Elige tu ciudad:</h3>
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary" onclick="mostrarParis();">PARIS</button>
+            <button type="button" class="btn btn-secondary" onclick="mostrarRoma();">ROMA</button>
+            
+          </div>
+        <h2 class="" id="h2Paris">Ciudad de <span class="display-3">París</span></h2>
+        <p class="text-info" id="pParis">París, la capital de Francia, es una importante ciudad europea y un centro mundial del arte, la moda, la gastronomía y la cultura. Su paisaje urbano del siglo XIX está entrecruzado por amplios bulevares y el río Sena. Aparte de estos hitos, como la Torre Eiffel y la catedral gótica de Notre Dame del siglo XII, la ciudad es famosa por su cultura del café y las tiendas de moda de diseñador a lo largo de la calle Rue du Faubourg Saint-Honoré</p>
+        <img src="img/paris.jpg" alt="Paris" class="img-fluid" id="imgParis" onclick="toggleParis();">
+        <h2 id="h2Roma" class="d-none">Ciudad de <span class="display-3">Roma</span></h2>
+        <p class="text-info d-none" id="pRoma">Roma, la capital de Italia, es una extensa ciudad cosmopolita que tiene a la vista casi 3,000 años de arte, arquitectura y cultura de influencia mundial. Las ruinas antiguas como las del Foro y el Coliseo evocan el poder del antiguo Imperio Romano. La ciudad del Vaticano, sede central de la Iglesia católica romana, cuenta con la Basílica de San Pedro y los Museos del Vaticano, que albergan obras maestras como los frescos de la Capilla Sixtina de Miguel Ángel.</p>
+        <img src="img/roma.jpg" alt="Roma" class="img-fluid d-none"  id="imgRoma" onclick="toggleRoma();">
+    </main>
+    
+</div>
+
+<!-- SCRIPTS DE BOOSTRAP: -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="ciudades.js"></script>
+</body>
+</html>
